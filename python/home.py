@@ -54,8 +54,8 @@ class FirstPage:
 
       
 
-        home_bgImg = Image.open('python\\assets\\home.png')
-        home_bgImg = home_bgImg.resize((1340, 690))
+        home_bgImg = Image.open('python\\new\\home.png')
+        home_bgImg = home_bgImg.resize((1300, 690))
 
         photo = ImageTk.PhotoImage(home_bgImg)
         home_bg = Label(homepage, image=photo, bg='#525561')
@@ -64,33 +64,33 @@ class FirstPage:
 
         
         
-        home_bgImg1 = Image.open('python\\assets\\homebtn.png')
-        home_bgImg1= home_bgImg1.resize((140, 40))
+        home_bgImg1 = Image.open('python\\new\\homentn.png')
+        home_bgImg1= home_bgImg1.resize((130, 46))
         photo2 = ImageTk.PhotoImage(home_bgImg1)
         home_bg1 = Label(homepage, image=photo2, bg='#272A37')
         home_bg1.image = photo2
       
-        home_bgImg2 = Image.open('python\\assets\\chat.png')
-        home_bgImg2= home_bgImg2.resize((150, 50))
+        home_bgImg2 = Image.open('python\\new\\chatbtn.png')
+        home_bgImg2= home_bgImg2.resize((130, 46))
         photo3 = ImageTk.PhotoImage(home_bgImg2)
         home_bg2 = Label(homepage, image=photo3, bg='#272A37')
         home_bg2.image = photo3
 
 
-        home_bgImg3 = Image.open('python\\assets\\face.png')
-        home_bgImg2= home_bgImg2.resize((100, 40))
+        home_bgImg3 = Image.open('python\\new\\facid.png')
+        home_bgImg2= home_bgImg2.resize((90,37))
         photo4 = ImageTk.PhotoImage(home_bgImg3)
         home_bg3 = Label(homepage, image=photo4, )
         home_bg3.image = photo4
       
-        home_bgImg4 = Image.open('python\\assets\\about.png')
-        home_bgImg2= home_bgImg2.resize((130, 40))
+        home_bgImg4 = Image.open('python\\new\\aboutbtn.png')
+        home_bgImg2= home_bgImg2.resize((90,37))
         photo5 = ImageTk.PhotoImage(home_bgImg4)
         home_bg4 = Label(homepage, image=photo5, )
         home_bg4.image = photo5
        
-        home_bgImg5 = Image.open('python\\assets\\logout.png')
-        home_bgImg2= home_bgImg2.resize((110, 40))
+        home_bgImg5 = Image.open('python\\new\\logout.png')
+        home_bgImg2= home_bgImg2.resize((90, 37))
         photo6 = ImageTk.PhotoImage(home_bgImg5)
         home_bg5 = Label(homepage, image=photo6, )
         home_bg5.image = photo6
@@ -110,7 +110,7 @@ class FirstPage:
             highlightthickness=0,
             cursor='hand2',
             relief="flat",)
-        home_button.place(x=130, y=90)
+        home_button.place(x=140, y=90)
 
         def about():
             pass
@@ -128,7 +128,7 @@ class FirstPage:
             relief="flat" ,
             command=chat
                     )
-        chat_button.place(x=140, y=180)
+        chat_button.place(x=300, y=90)
 
 
 
@@ -137,7 +137,7 @@ class FirstPage:
             highlightthickness=0,
             cursor='hand2',
             relief="flat" ,command=about)
-        face_button.place(x=115, y=290)
+        face_button.place(x=765, y=90)
 
         # ========== about  BUTTON =======
         about_button = Button(
@@ -148,7 +148,7 @@ class FirstPage:
             cursor='hand2',
             relief="flat" ,         
             command=about)
-        about_button.place(x=90, y=400)
+        about_button.place(x=460, y=90)
         
      
 
@@ -163,7 +163,7 @@ class FirstPage:
             highlightthickness=0,
             cursor='hand2',
             relief="flat" , command=Dashboard)
-        logout_button.place(x=110, y=530)
+        logout_button.place(x=1000, y=90)
 
 
 def page():
