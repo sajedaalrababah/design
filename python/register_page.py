@@ -186,7 +186,7 @@ def regestier():
         bg='black',
         command=lambda:signup(firstName_entry,lastName_entry,emailName_entry,passwordName_entry)
     )
-    submit_button .place(x=200, y=535)
+    submit_button .place(x=280, y=540)
 
    
 

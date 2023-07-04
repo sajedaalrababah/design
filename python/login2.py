@@ -112,7 +112,7 @@ def loginpage ():
    
 
     # ================ GO TO SIGN UP ====================
-    signup_img= PhotoImage(file="python\\new\signup.png")
+    signup_img= PhotoImage(file="python\\new\singup.png")
 
     switchSignup = Button(
         bg_imageLogin,
@@ -167,7 +167,7 @@ def loginpage ():
         bd=0,
         bg='#A28DCF',
         highlightthickness=0,
-        font=("yu gothic ui SemiBold", 16 * -1),
+        font=("yu gothic ui SemiBold", 15),
     )
     Login_passwordName_entry.place(x=10, y=17,width=400 )
 
@@ -190,7 +190,7 @@ def loginpage ():
         
     )
 
-    Login_button_1.place(x=50, y=530)
+    Login_button_1.place(x=120, y=520)
 
 
 
@@ -208,7 +208,7 @@ def loginpage ():
         
     )
 
-    face_button_1.place(x=350, y=530)
+    face_button_1.place(x=330, y=520)
 
     forgot_password_image= PhotoImage(file="python\\new\\forget.png")
     forgotPassword = Button(
@@ -221,7 +221,7 @@ def loginpage ():
         cursor="hand2",
         command=lambda: forgot_password(),
     )
-    forgotPassword.place(x=150, y=460, )
+    forgotPassword.place(x=230, y=460, )
 
 
     def forgot_password():
